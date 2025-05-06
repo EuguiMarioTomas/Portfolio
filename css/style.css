@@ -1,0 +1,11 @@
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 4px solid red;
+}
+#inicio h1, #inicio h2{
+    text-transform: uppercase;
+}

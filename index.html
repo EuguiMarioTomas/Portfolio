@@ -4,210 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!--foont-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!--normalize-->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!--bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!--css-->
-    <link rel="stylesheet" href="css/style.css">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg sticky-top navegationBar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand tituloName" href="#">
-                    <!--Falta ICONO-->
-                    Eugui M. Tomás
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggle-icon"></span>
+                <a class="navbar-brand navbarTitle" href="#">Eugui M. Tomas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegationBar">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center linksNavbar" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#competencias">COMPETENCIAS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experiencia">EXPERIENCIA FORMATIVA</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">CONTACTO</a></li>
+                <div class="collapse navbar-collapse justify-content-end" id="navegationBar">
+                    <ul class="navbar-nav navegationBarList">
+                        <li class="nav-item"><a class="nav-link" href="#competencias">Competencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section id="inicio">
-            <div class="container">
-                <h1 class="display-4 fw-bold"> SOY EUGUI MARIO TOMÁS</h1>
-                <h2 class="fs-4 mb-4">DISEÑADOR UX/UI DESARROLLADOR WEB FRONTEND JR.</h2>
-                <p class="lead mb-4">
-                    Apasionado por el diseño y desarrollo web, me especializo en crear interfaces limpias, funcionales y modernas con HTML, CSS, JavaScript y Bootstrap. En constante aprendizaje y listo para enfrentar nuevos desafíos.
-                </p>
-                <a href="cv/EuguiMTomasCV.pdf" class="btn btn-outline-success btn-lg" download>
-                    <i class="bi bi-download"></i> 
-                    DESCARGAR CURRICULUM
-                </a> 
-            </div>
-        </section>
-        <section id="competencias">
-            <div class="container">
-                <h2 class="text-center mb-5">01 | Competencias</h2>
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <h3>HTML & CSS</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">Alto</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>JavaScript</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;">Bajo</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>SASS</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">Medio</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Bootstrap</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;">Medio</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Node.js</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 50%;">Medio</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Figma</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>GIT & GITHUB</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">Alto</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Visual Studio Code</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 95%;">Alto</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Visual Studio 2022</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="experiencia" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">03 | EXPERIENCIA FORMATIVA</h2>
-                <div class="col-md-12">
-                    <div class="d-flex flex-column flex-md-row mb-4">
-                        <div class="me-md-4 text-md-end text-center mb-2 mb-md-0" style="min-width: 150px;">
-                            <h3 class="fw-bold">Universidad</h3>
-                            <p class="mb-0">Landing institucional de práctica universitaria</p>
-                            <small class="text-muted">2023</small>
-                        </div>
-                        <div class="border-start ps-4">
-                            <p>Desarrollo de una landing page estática, enfocada en buenas prácticas de maquetación semántica y diseño responsive con HTML y CSS puro.</p>
-                            <!-- <a href="#" target="_blank">Ver proyecto</a> -->
-                        </div>
-                    </div>
+    <main class="container">
 
-                    <div class="d-flex flex-column flex-md-row mb-4">
-                        <div class="me-md-4 text-md-end text-center mb-2 mb-md-0" style="min-width: 150px;">
-                            <h5 class="fw-bold">Coderhouse</h5>
-                            <p class="mb-0">Sitio web final - Curso Desarrollo Web Flex</p>
-                            <small class="text-muted">2024</small>
-                        </div>
-                        <div class="border-start ps-4">
-                            <p>
-                            Proyecto integrador aplicando Bootstrap, sistema de grillas, SASS y JavaScript básico. Optimizado para múltiples dispositivos y publicado en GitHub Pages.
-                            </p>
-                            <!-- <a href="#" target="_blank">Ver proyecto</a> -->
-                        </div>
+        <section id="inicio" class="m-4">
+            <h1 class="display-4 fw-bold">Soy Eugui Mario Tomás</h1>
+            <h2 class="fs-4 mb-4">Desarrollador Web Frontend JR.</h2>
+            <p class="lead mb-4">Apasionado por el diseño y desarrollo web, me especializo en crear interfaces limpias, funcionales y modernas con HTML, CSS, SCSS, JavaScript y Bootstrap. En constante aprendizaje y listo para enfrentar nuevos desafíos.</p>
+            <a href="" class="btn btn-outline-success btn-lg" download><i class="bi bi-download"></i>Descargar Curriculum</a>
+        </section>
+
+
+        <section id="competencias" class="m-4">
+            <h2 class="mb-5">01 | Competencias</h2>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <h3>HTML & CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">Alto</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;">Bajo</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>SASS</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;">Alto</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Bootstrap</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%;">Medio</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Node.js</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;">Bajo</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Figma</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>GIT & GITHUB</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">Alto</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Visual Studio Code</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%;">Alto</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Visual Studio 2022</h3>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="portfolio">
-            <div class="container">
-                <h2 class="text-center mb-5">04 | PORTFOLIO</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="img/proyecto-universidad.jpg" class="card-img-top" alt="Landing Universidad">
-                      <div class="card-body">
-                        <h3 class="card-title">Landing Universitaria</h3>
-                        <p class="card-text">Landing institucional desarrollada como trabajo práctico con HTML y CSS puro.</p>
-                      </div>
-                      <div class="card-footer bg-transparent border-0">
-                        <a href="#" target="_blank" class="btn btn-outline-primary w-100">Ver proyecto</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100">
-                      <img src="img/proyecto-coderhouse.jpg" class="card-img-top" alt="Sitio Coderhouse">
-                      <div class="card-body">
-                        <h3 class="card-title">Sitio Final Coderhouse</h3>
-                        <p class="card-text">Proyecto integrador con Bootstrap, SASS y maquetado responsive. Publicado en GitHub Pages.</p>
-                      </div>
-                      <div class="card-footer bg-transparent border-0">
-                        <a href="#" target="_blank" class="btn btn-outline-primary w-100">Ver proyecto</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-        <section id="contacto">
-            <div class="container">
-                <h2 class="text-center mb-5">05 | CONTACTO</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <p class="fs-5">
-                            Si querés comunicarte conmigo, no dudes en escribirme. Estoy disponible para colaborar en proyectos, prácticas o propuestas laborales vinculadas al desarrollo web frontend.
-                        </p>
-                    </div>
 
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label class="form-label">Nombre Completo</label>
-                            <div class="form-control bg-light">Eugui Mario Tomás</div>
+
+        <section id="portfolio" class="m-4">
+            <h2 class="text-center mb-5">02 | Portfolio</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/" class="card-img-top" alt="Landing Universitario">
+                        <div class="card-body">
+                            <h3 class="card-title">Universidad</h3>
+                            <p class="card-text">Landing institucional de práctica universitaria. Desarrollo de una landing page estática, enfocada en buenas prácticas de maquetación semántica y diseño responsive con HTML y CSS puro.</p>
+                            <small>2023</small>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Correo Electronico</label>
-                            <div class="form-control bg-light">tomasmarioeugui@gmail.com</div>
+                        <!--<a href="" target="_blank">Ver proyecto</a>-->
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/" class="card-img-top" alt="Sitio CoderHouse">
+                        <div class="card-body">
+                            <h3 class="card-title">CoderHouse</h3>
+                            <p class="card-text">Sitio web final - Curso Desarrollo Web Flex. Proyecto integrador aplicando Bootstrap, sistema de grillas, SASS y JavaScript básico. Optimizado para múltiples dispositivos, publicado en GitHub Pages y Netlify.</p>
+                            <small>2025</small>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Telefono</label>
-                            <div class="form-control bg-light">+54 3444 416012</div>
-                        </div>
+                        <a href="https://phasmoguide.netlify.app" target="_blank">Ver proyecto</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="text-center py-2 border-top border-black">
-        <div class="container">
-            <h2 class="fs-4 fw-nold">2025 Creado por Eugui M. Tomás</h2>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
