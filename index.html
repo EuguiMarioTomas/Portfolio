@@ -13,123 +13,163 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark navegationbar">
             <div class="container-fluid">
                 <a class="navbar-brand navbarTitle" href="#">Eugui M. Tomas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegationBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navegationBar">
-                    <ul class="navbar-nav navegationBarList">
+                    <ul class="navbar-nav navbarList gap-5">
                         <li class="nav-item"><a class="nav-link" href="#competencias">Competencias</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container">
-
-        <section id="inicio" class="m-4">
-            <h1 class="display-4 fw-bold">Soy Eugui Mario Tomás</h1>
-            <h2 class="fs-4 mb-4">Desarrollador Web Frontend JR.</h2>
-            <p class="lead mb-4">Apasionado por el diseño y desarrollo web, me especializo en crear interfaces limpias, funcionales y modernas con HTML, CSS, SCSS, JavaScript y Bootstrap. En constante aprendizaje y listo para enfrentar nuevos desafíos.</p>
-            <a href="" class="btn btn-outline-success btn-lg" download><i class="bi bi-download"></i>Descargar Curriculum</a>
-        </section>
-
-
-        <section id="competencias" class="m-4">
-            <h2 class="mb-5">01 | Competencias</h2>
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <h3>HTML & CSS</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">Alto</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>JavaScript</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;">Bajo</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>SASS</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;">Alto</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Bootstrap</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%;">Medio</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Node.js</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;">Bajo</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Figma</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>GIT & GITHUB</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">Alto</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Visual Studio Code</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%;">Alto</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Visual Studio 2022</h3>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
-                    </div>
+    <main>
+        <section id="inicio" class="background-inicio">
+            <div class="container infoInicio">
+                <div class="m-4">
+                    <h1 class="display-3 fw-bold p-5 nameStack">
+                        <span>soy</span>
+                        <span>eugui</span>
+                        <span>mario</span>
+                        <span>tomás</span>
+                    </h1>
+                    <h2 class="fs-4 mb-4">Desarrollador Web Frontend JR.</h2>
+                    <p class="lead fw-bold mb-4">Apasionado por el diseño y desarrollo web, me especializo en crear interfaces limpias, funcionales y modernas con HTML, CSS, SCSS, JavaScript y Bootstrap. En constante aprendizaje y listo para enfrentar nuevos desafíos.</p>
+                    <a href="" class="btn btn-outline-success btn-lg" download><i class="bi bi-download"></i>Descargar Curriculum</a>
                 </div>
             </div>
         </section>
 
-
-        <section id="portfolio" class="m-4">
-            <h2 class="text-center mb-5">02 | Portfolio</h2>
-
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/img/" class="card-img-top" alt="Landing Universitario">
-                        <div class="card-body">
-                            <h3 class="card-title">Universidad</h3>
-                            <p class="card-text">Landing institucional de práctica universitaria. Desarrollo de una landing page estática, enfocada en buenas prácticas de maquetación semántica y diseño responsive con HTML y CSS puro.</p>
-                            <small>2023</small>
+        <section class="background-image">
+            <div id="competencias" class="container infoCompetencias">
+                <div class="m-4">
+                    <h2 class="fs-3 mb-4 text-center p-5">Competencias</h2>
+                    <div class="row mb-4">
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">HTML & CSS</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">Alto</div>
+                            </div>
                         </div>
-                        <!--<a href="" target="_blank">Ver proyecto</a>-->
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">JavaScript</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;">Bajo</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">SASS</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%;">Alto</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">Bootstrap</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%;">Medio</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">Node.js</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%;">Bajo</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">Figma</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">GIT & GITHUB</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">Alto</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">Visual Studio Code</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 95%;">Alto</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 p-4">
+                            <h3 class="fs-3 fw-bold">Visual Studio 2022</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 60%;">Medio</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/img/" class="card-img-top" alt="Sitio CoderHouse">
-                        <div class="card-body">
-                            <h3 class="card-title">CoderHouse</h3>
-                            <p class="card-text">Sitio web final - Curso Desarrollo Web Flex. Proyecto integrador aplicando Bootstrap, sistema de grillas, SASS y JavaScript básico. Optimizado para múltiples dispositivos, publicado en GitHub Pages y Netlify.</p>
-                            <small>2025</small>
+            </div>
+            <div id="portfolio" class="container infoPortfolio">
+                <div class="m-4">
+                    <h2 class="text-center mb-5 p-5">Portfolio</h2>
+    
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                        
+                        <div class="card h-100 m-5 portfolioCards">
+                            <img src="./assets/img/universalrastas-img.png" class="card-img-top" alt="Landing Universitario">
+                            <div class="card-body">
+                                <h3 class="card-title">Universidad</h3>
+                                <p class="card-text">Landing institucional de práctica universitaria. Desarrollo de una landing page estática, enfocada en buenas prácticas de maquetación semántica y diseño responsive con HTML y CSS puro.</p>
+                                <small>2023</small>
+                            </div>
+                            <a href="https://euguimariotomas.github.io/UniversalRastas/" class="btn btn-outline-success mb-4" target="_blank">Ver proyecto</a>
                         </div>
-                        <a href="https://phasmoguide.netlify.app" target="_blank">Ver proyecto</a>
+
+                        <div class="card h-100 m-5 portfolioCards">
+                            <img src="./assets/img/phasmoguide-img.png" class="card-img-top" alt="Sitio CoderHouse">
+                            <div class="card-body">
+                                <h3 class="card-title">CoderHouse</h3>
+                                <p class="card-text">Sitio web final - Curso Desarrollo Web Flex. Proyecto integrador aplicando Bootstrap, sistema de grillas, SASS y JavaScript básico. Optimizado para múltiples dispositivos, publicado en GitHub Pages y Netlify.</p>
+                                <small>2025</small>
+                            </div>
+                            <a href="https://phasmoguide.netlify.app" class="btn btn-outline-success mb-4" target="_blank">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contacto" class="container contacto">
+                <h2 class="text-center mb-5 p-5">Contacto</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">  
+                        <div class="card-body formContacto">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="text" class="form-control" id="email" value="mariotomaseugui@gmail.com" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Telefono:</label>
+                                    <input type="text" class="form-control" id="telefono" value="+54 9 3444 416012" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ubicacion" class="form-label">Ubicación:</label>
+                                    <input type="text" class="form-control" id="ubicacion" value="Rosario, Santa Fe, Argentina" readonly>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="linkedin" class="form-label">LinkedIn:</label>
+                                    <input type="text" class="form-control" id="linkedin" value="Mario Tomas Eugui" readonly>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer bg-dark text-light text-center py-4 footerContenido">
+        <div class="container">
+          <p class="mb-1">© 2025 Tomas M. Eugui | Desarrollador Web</p>
+        </div>
+      </footer>
     <!--scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>

@@ -1,11 +1,89 @@
-#inicio{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background-inicio{
+    background-image: url('../assets/img/background-inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.background-image{
+    background-image: url('../assets/img/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+section {
+    padding: 80px 0;
+    margin: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navegationbar{
+    background-color: #000 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbarList a{
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: #fff;
+}
+.navbarList a:hover{
+    background-color: #0a4e0a;
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
+.infoInicio{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 4px solid red;
+    color: #000;
 }
-#inicio h1, #inicio h2{
+.nameStack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-transform: uppercase;
+    color: #000;
+}
+
+.infoCompetencias{
+    color: #000;
+}
+
+.infoPortfolio h2{
+    color: #fff;
+}
+.portfolioCards{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+.portfolioCards img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.contacto{
+    color: #fff;
+}
+.formContacto{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 25px;
+}
+
+.footerContenido{
+    background-color: #000 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
