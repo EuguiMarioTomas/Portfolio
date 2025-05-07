@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .background-inicio{
     background-image: url('../assets/img/background-inicio.jpg');
     background-size: cover;
@@ -30,7 +31,11 @@ section {
     width: 100%;
     z-index: 9999;
 }
+.navbarTitle{
+    font-family: 'Poppins', sans-serif;
+}
 .navbarList a{
+    font-family: 'Poppins', sans-serif;
     transition: background 0.3s ease, transform 0.2s ease;
     color: #fff;
 }
@@ -39,7 +44,6 @@ section {
     transform: scale(1.05);
     border-radius: 5px;
 }
-
 .infoInicio{
     display: flex;
     flex-direction: column;
@@ -54,22 +58,45 @@ section {
     align-items: center;
     text-transform: uppercase;
     color: #000;
+    font-family: 'Poppins', sans-serif;
 }
-
+.infoInicio h2{
+    font-family: 'Poppins', sans-serif;
+}
+.infoInicio p{
+    font-family: 'Inter', sans-serif;
+}
 .infoCompetencias{
     color: #fff;
+    
+}
+.infoCompetencias h2{
+    font-family: 'Poppins', sans-serif;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
 }
-
+.infoCompetencias h3{
+    font-family: 'Inter', sans-serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+.infoInicio a{
+    font-family: 'Inter', sans-serif;
+}
 .infoPortfolio h2{
     color: #fff;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif;
 }
 .portfolioCards{
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+.portfolioCards h3{
+    font-family: 'Poppins', sans-serif;
+}
+.portfolioCards p{
+    font-family: 'Inter', sans-serif;
 }
 .portfolioCards img{
     width: 100%;
@@ -79,6 +106,7 @@ section {
 .contacto{
     color: #fff;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif;
 }
 .formContacto{
     border-radius: 10px;
@@ -90,6 +118,7 @@ section {
 .footerContenido{
     background-color: #000 !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    font-family: 'Poppins', sans-serif;
 }
 
 
