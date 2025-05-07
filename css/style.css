@@ -87,3 +87,23 @@ section {
     background-color: #000 !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
+
+
+@media only screen and (max-width: 630px){
+    .background-inicio{
+        background-image: url('../assets/img/background-inicio.jpg');
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
+@media only screen and (min-width: 631px) and (max-width:900px){
+    .background-inicio{
+        background-image: url('../assets/img/background-inicio.jpg');
+        background-size:cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+}
