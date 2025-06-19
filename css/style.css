@@ -103,9 +103,12 @@ section {
     height: 250px;
     border-radius: 5px;
 }
-
+.certificadosInfo h2{
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    font-family: 'Poppins', sans-serif;
+}
 .certificadosCards{
-    
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
