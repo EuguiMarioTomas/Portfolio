@@ -1,0 +1,28 @@
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}*/
+.navBar{
+    background-color: #000 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.navbarTitle{
+    font-family: 'Poppins', sans-serif;
+}
+.navbarLink{
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s ease, transform 0.2s ease;
+    color: #fff;
+}
+.navbarLink:hover{
+  background-color: #0a4e0a;
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+
